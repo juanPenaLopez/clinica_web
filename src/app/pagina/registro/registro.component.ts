@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {RegistroPacienteDTO} from "../../modelo/registro-paciente-dto";
 
 @Component({
   selector: 'app-registro',
@@ -7,4 +8,16 @@ import { Component } from '@angular/core';
 })
 export class RegistroComponent {
 
+  public registroPacienteDTO: RegistroPacienteDTO;
+  constructor(){
+    this.registroPacienteDTO = new RegistroPacienteDTO();
+  }
+
+  public registrar(){
+    console.log(this.registroPacienteDTO);
+  }
+
+  public sonIguales():boolean{
+    return this.registroPacienteDTO.password == this.registroPacienteDTO.confirmaPassword;
+  }
 }
