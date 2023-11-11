@@ -20,4 +20,8 @@ export class RegistroComponent {
   public sonIguales():boolean{
     return this.registroPacienteDTO.password == this.registroPacienteDTO.confirmaPassword;
   }
+
+  public onFileChange(event: Event){
+
+  }
 }
