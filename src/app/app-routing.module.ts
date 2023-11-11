@@ -7,12 +7,15 @@ import {GestionPqrsComponent} from "./pagina/gestion-pqrs/gestion-pqrs.component
 import {CrearPqrsComponent} from "./pagina/crear-pqrs/crear-pqrs.component";
 import {DetallePqrsComponent} from "./pagina/detalle-pqrs/detalle-pqrs.component";
 import {LoginGuard} from "./guards/permiso.service";
+import {AtencionCitaComponent} from "./pagina/atencion-cita/atencion-cita.component";
+import {CrearMedicoComponent} from "./pagina/crear-medico/crear-medico.component";
+import {RolesGuard} from "./guards/roles.service";
 const routes: Routes = [
 { path: "", component: InicioComponent },
 { path: "login", component: LoginComponent },
 { path: "registro", component: RegistroComponent },
   { path: "gestion-pqrs", component: GestionPqrsComponent, canActivate: [RolesGuard], data: {
-      expectedRole: ["paciente"] } },,
+      expectedRole: ["paciente"] } },
   { path: "login", component: LoginComponent, canActivate: [LoginGuard] },
   { path: "registro", component: RegistroComponent, canActivate: [LoginGuard] },
   { path: "crear-pqrs", component: CrearPqrsComponent, canActivate: [RolesGuard], data: {

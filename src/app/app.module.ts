@@ -12,6 +12,8 @@ import { DetallePqrsComponent } from './pagina/detalle-pqrs/detalle-pqrs.compone
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import { AlertaComponent } from './pagina/alerta/alerta.component';
 import {UsuarioInterceptor} from "./interceptor/usuario.interceptor";
+import { AtencionCitaComponent } from './pagina/atencion-cita/atencion-cita.component';
+import { CrearMedicoComponent } from './pagina/crear-medico/crear-medico.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import {UsuarioInterceptor} from "./interceptor/usuario.interceptor";
     GestionPqrsComponent,
     CrearPqrsComponent,
     DetallePqrsComponent,
-    AlertaComponent
+    AlertaComponent,
+    AtencionCitaComponent,
+    CrearMedicoComponent
   ],
   imports: [
     BrowserModule,

@@ -3,6 +3,7 @@ import {HttpClient} from "@angular/common/http";
 import {MensajeDTO} from "../modelo/mensaje-dto";
 import {Observable} from "rxjs";
 import {RegistroPQRSDTO} from "../modelo/registro-pqrs.dto";
+import {DetallePacienteDTO} from "../modelo/detalle-paciente-dto";
 
 @Injectable({
   providedIn: 'root'

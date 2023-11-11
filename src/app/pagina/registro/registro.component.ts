@@ -16,20 +16,22 @@ export class RegistroComponent {
   public ciudades: Array<any>;
   alerta!:Alerta;
   public archivos: any;
+  private usuario: RegistroPacienteDTO;
 
   constructor(private authService: AuthService, private clinicaService: ClinicaService,
               private imagenService: ImagenService) {
     this.registroPacienteDTO = new RegistroPacienteDTO();
     this.ciudades = new Array<any>();
+    this.usuario = new RegistroPacienteDTO();
   }
 
   public registrar() {
     if (this.registroPacienteDTO.urlFoto.length != 0){
-      this.authService.registrar(this.usuario).subscribe({
-        next: data => {
+      this.authService.registrarPaciente(this.usuario).subscribe({
+        next: (data: { respuesta: any; }) => {
           this.alerta = { mensaje: data.respuesta, tipo: "success" };
         },
-        error: error => {
+        error: (error: { error: { respuesta: any; }; }) => {
           this.alerta = { mensaje: error.error.respuesta, tipo: "danger" };
         }
       });
