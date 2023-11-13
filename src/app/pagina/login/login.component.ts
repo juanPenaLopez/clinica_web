@@ -30,4 +30,8 @@ export class LoginComponent {
       }
     });
   }
+
+  public recuperarContrasena(){
+    window.location.href = "./restaurar-contrasena/restaurar-contrasena.component.html";
+  }
 }

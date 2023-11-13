@@ -13,7 +13,7 @@ export class ImagenService {
   public subir(imagen: FormData): Observable<MensajeDTO> {
     return this.http.post<MensajeDTO>(`${this.imgURL}/subir`, imagen);
   }
-  public eliminar(imagenDTO: ImagenDTO): Observable<MensajeDTO> {
-    return this.http.request<MensajeDTO>('delete', `${this.imgURL}/eliminar`, { body: imagenDTO});
-  }
+//  public eliminar(imagenDTO: ImagenDTO): Observable<MensajeDTO> {
+//    return this.http.request<MensajeDTO>('delete', `${this.imgURL}/eliminar`, { body: imagenDTO});
+//  }
 }

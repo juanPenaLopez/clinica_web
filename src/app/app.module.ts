@@ -14,6 +14,7 @@ import { AlertaComponent } from './pagina/alerta/alerta.component';
 import {UsuarioInterceptor} from "./interceptor/usuario.interceptor";
 import { AtencionCitaComponent } from './pagina/atencion-cita/atencion-cita.component';
 import { CrearMedicoComponent } from './pagina/crear-medico/crear-medico.component';
+import { RestaurarContrasenaComponent } from './pagina/restaurar-contrasena/restaurar-contrasena.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CrearMedicoComponent } from './pagina/crear-medico/crear-medico.compone
     DetallePqrsComponent,
     AlertaComponent,
     AtencionCitaComponent,
-    CrearMedicoComponent
+    CrearMedicoComponent,
+    RestaurarContrasenaComponent
   ],
   imports: [
     BrowserModule,

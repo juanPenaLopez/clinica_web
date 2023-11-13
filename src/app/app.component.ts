@@ -8,7 +8,7 @@ import {TokenService} from "./servicios/token.service";
 })
 export class AppComponent {
 
-  title = "Clinica_UQ";
+  title = "DoctorFast";
   isLogged = false;
 
   email:string = "";

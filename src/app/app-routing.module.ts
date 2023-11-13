@@ -10,8 +10,9 @@ import {LoginGuard} from "./guards/permiso.service";
 import {AtencionCitaComponent} from "./pagina/atencion-cita/atencion-cita.component";
 import {CrearMedicoComponent} from "./pagina/crear-medico/crear-medico.component";
 import {RolesGuard} from "./guards/roles.service";
+import { RestaurarContrasenaComponent } from './pagina/restaurar-contrasena/restaurar-contrasena.component';
 const routes: Routes = [
-{ path: "", component: InicioComponent },
+{ path: "home", component: InicioComponent },
 { path: "login", component: LoginComponent },
 { path: "registro", component: RegistroComponent },
   { path: "gestion-pqrs", component: GestionPqrsComponent, canActivate: [RolesGuard], data: {
@@ -26,6 +27,7 @@ const routes: Routes = [
       expectedRole: ["medico"] } },
   { path: "crear-medico", component: CrearMedicoComponent, canActivate: [RolesGuard], data: {
       expectedRole: ["admin"] } },
+{ path: "restaurar-contrasena", component: RestaurarContrasenaComponent },
 { path: "**", pathMatch: "full", redirectTo: "" }
 ];
 @NgModule({
