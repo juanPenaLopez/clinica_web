@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .recovery-view-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .recovery-view-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .recovery-view-description {
+    margin-bottom: 20px;
+  }
+  
+  .recovery-view-form {
+    text-align: left;
+  }
+  
+  .continue-button {
+    background-color: #597eaa;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .continue-button:hover {
+    background-color: #445d80;
+  }
+  

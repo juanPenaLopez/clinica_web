@@ -11,6 +11,8 @@ import {AtencionCitaComponent} from "./pagina/atencion-cita/atencion-cita.compon
 import {CrearMedicoComponent} from "./pagina/crear-medico/crear-medico.component";
 import {RolesGuard} from "./guards/roles.service";
 import { RestaurarContrasenaComponent } from './pagina/restaurar-contrasena/restaurar-contrasena.component';
+import {RecuperacionCuentaComponent} from "./pagina/recuperacion-cuenta/recuperacion-cuenta.component";
+import {SolicitarDiaLibreComponent} from "./pagina/solicitar-dia-libre/solicitar-dia-libre.component";
 const routes: Routes = [
 { path: "home", component: InicioComponent },
 { path: "login", component: LoginComponent },
@@ -28,7 +30,9 @@ const routes: Routes = [
   { path: "crear-medico", component: CrearMedicoComponent, canActivate: [RolesGuard], data: {
       expectedRole: ["admin"] } },
 { path: "restaurar-contrasena", component: RestaurarContrasenaComponent },
-{ path: "**", pathMatch: "full", redirectTo: "" }
+  { path: "recuperar-cuenta", component: RecuperacionCuentaComponent },
+  { path: "solicitar-dia-libre", component: SolicitarDiaLibreComponent },
+{ path: "**", pathMatch: "full", redirectTo: "home" }
 ];
 @NgModule({
 imports: [RouterModule.forRoot(routes)],

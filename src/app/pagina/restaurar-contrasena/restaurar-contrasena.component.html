@@ -19,8 +19,8 @@
             </select>
             <label for="identification-number">Número de Identificación:</label>
             <input type="text" id="identification-number" name="identification-number"
-                placeholder="Ingrese su número de identificación" required>
-            <button type="submit" class="next-button">Siguiente</button>
+                placeholder="Ingrese su número de identificación" required pattern="[0-9]*">
+            <button type="submit" class="next-button" (click)="siguiente()">Siguiente</button>
         </form>
     </div>
 </body>

@@ -15,6 +15,12 @@ import {UsuarioInterceptor} from "./interceptor/usuario.interceptor";
 import { AtencionCitaComponent } from './pagina/atencion-cita/atencion-cita.component';
 import { CrearMedicoComponent } from './pagina/crear-medico/crear-medico.component';
 import { RestaurarContrasenaComponent } from './pagina/restaurar-contrasena/restaurar-contrasena.component';
+import { RecuperacionCuentaComponent } from './pagina/recuperacion-cuenta/recuperacion-cuenta.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ModalContentComponent } from './pagina/modal-content/modal-content.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { SolicitarDiaLibreComponent } from './pagina/solicitar-dia-libre/solicitar-dia-libre.component';
 
 @NgModule({
   declarations: [
@@ -28,13 +34,19 @@ import { RestaurarContrasenaComponent } from './pagina/restaurar-contrasena/rest
     AlertaComponent,
     AtencionCitaComponent,
     CrearMedicoComponent,
-    RestaurarContrasenaComponent
+    RestaurarContrasenaComponent,
+    RecuperacionCuentaComponent,
+    ModalContentComponent,
+    SolicitarDiaLibreComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatDialogModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: UsuarioInterceptor, multi: true }

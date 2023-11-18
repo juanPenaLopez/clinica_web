@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./recuperacion-cuenta.component.css">
+    <title>Recuperación de la Cuenta</title>
+</head>
+
+<body>
+    <div class="recovery-view-container">
+        <h2 class="recovery-view-title">Recuperación de la Cuenta</h2>
+        <p class="recovery-view-description">
+            Para restablecer tu contraseña, selecciona el correo electrónico que más te identifique y haz clic en
+            Continuar.
+        </p>
+        <form class="recovery-view-form" id="recoveryViewForm">
+            <!-- Checkbox llenado dinámicamente con el back -->
+            <div id="checkboxContainer"></div>
+
+            <button type="button" class="continue-button" (click)="continuar()">Continuar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

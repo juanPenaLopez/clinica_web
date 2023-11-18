@@ -4,6 +4,7 @@ import {LoginDTO} from "../../modelo/login-dto";
 import {AuthService} from "../../servicios/auth.service";
 import {ClinicaService} from "../../servicios/clinica.service";
 import {TokenService} from "../../servicios/token.service";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -16,7 +17,7 @@ export class LoginComponent {
   public loginDTO : LoginDTO;
 
   constructor(private authService: AuthService, private clinicaService: ClinicaService,
-              private tokenService: TokenService) {
+              private tokenService: TokenService, private router: Router) {
     this.loginDTO = new LoginDTO();
   }
 
@@ -32,6 +33,6 @@ export class LoginComponent {
   }
 
   public recuperarContrasena(){
-    window.location.href = "./restaurar-contrasena/restaurar-contrasena.component.html";
+    this.router.navigate(['/restaurar-contrasena']);
   }
 }
