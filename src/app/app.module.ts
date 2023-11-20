@@ -24,6 +24,8 @@ import { SolicitarDiaLibreComponent } from './pagina/solicitar-dia-libre/solicit
 import { GestionarReservasComponent } from './pagina/gestionar-reservas/gestionar-reservas.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { GestionarCitasComponent } from './pagina/gestionar-citas/gestionar-citas.component';
+import { ConsultarDetalleCitaComponent } from './pagina/gestionar-citas/consultar-detalle-cita/consultar-detalle-cita.component';
+import { ModalEliminarCitaComponent } from './pagina/gestionar-citas/modal-eliminar-cita/modal-eliminar-cita.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { GestionarCitasComponent } from './pagina/gestionar-citas/gestionar-cita
     ModalContentComponent,
     SolicitarDiaLibreComponent,
     GestionarReservasComponent,
-    GestionarCitasComponent
+    GestionarCitasComponent,
+    ConsultarDetalleCitaComponent,
+    ModalEliminarCitaComponent
   ],
   imports: [
     BrowserModule,

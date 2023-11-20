@@ -15,6 +15,7 @@ import {RecuperacionCuentaComponent} from "./pagina/recuperacion-cuenta/recupera
 import {SolicitarDiaLibreComponent} from "./pagina/solicitar-dia-libre/solicitar-dia-libre.component";
 import { GestionarReservasComponent } from './pagina/gestionar-reservas/gestionar-reservas.component';
 import { GestionarCitasComponent } from './pagina/gestionar-citas/gestionar-citas.component';
+import { ConsultarDetalleCitaComponent } from './pagina/gestionar-citas/consultar-detalle-cita/consultar-detalle-cita.component';
 const routes: Routes = [
 { path: "home", component: InicioComponent },
 { path: "login", component: LoginComponent },
@@ -36,6 +37,7 @@ const routes: Routes = [
   { path: "solicitar-dia-libre", component: SolicitarDiaLibreComponent },
   { path: "gestionar-reservas", component: GestionarReservasComponent },
   { path: "gestionar-citas", component: GestionarCitasComponent },
+  { path: "gestionar-citas/consultar-detalle-cita", component: ConsultarDetalleCitaComponent },
 { path: "**", pathMatch: "full", redirectTo: "home" }
 ];
 @NgModule({

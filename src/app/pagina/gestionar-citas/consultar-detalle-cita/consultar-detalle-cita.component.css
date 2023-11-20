@@ -1,0 +1,46 @@
+.container {
+    text-align: left;
+    margin: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: #0074cc;
+    /* Azul oscuro */
+    margin-right: 20px;
+}
+
+.titulo {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.columna {
+    flex: 1;
+}
+
+.info-item {
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+.separador {
+    margin: 20px 0;
+    border: none;
+    border-top: 2px solid #0074cc;
+}
+
+.label {
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+}

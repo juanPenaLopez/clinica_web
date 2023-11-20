@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { ModalEliminarCitaComponent } from './modal-eliminar-cita/modal-eliminar-cita.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-gestionar-citas',
@@ -7,14 +10,16 @@ import { Component } from '@angular/core';
 })
 export class GestionarCitasComponent {
 
+  constructor(private router: Router,
+    private dialog: MatDialog
+    ) {}
+
   verDetalles() {
-    // Lógica para mostrar detalles de la cita
-    console.log('Ver detalles de la cita');
+    this.router.navigate(['/gestionar-citas/consultar-detalle-cita']);
   }
 
   eliminarCita() {
-    // Lógica para eliminar la cita
-    console.log('Eliminar cita');
+    this.dialog.open(ModalEliminarCitaComponent);
   }
 
 }

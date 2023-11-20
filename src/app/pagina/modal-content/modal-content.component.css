@@ -5,8 +5,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 300px; /* Ajusta el ancho mínimo según tus necesidades */
-    max-width: 80%;   /* Ajusta el ancho máximo según tus necesidades */
+    min-width: 300px;
+    max-width: 80%;
     margin: auto;
     padding: 20px;
     box-sizing: border-box;
@@ -14,12 +14,12 @@
   }
   
   h2 {
-    color: #333; /* Cambia el color del texto según tus preferencias */
+    color: #333; 
   }
   
   p {
     margin-top: 10px;
-    color: #555; /* Cambia el color del texto según tus preferencias */
+    color: #555; 
   }
   
   button {
