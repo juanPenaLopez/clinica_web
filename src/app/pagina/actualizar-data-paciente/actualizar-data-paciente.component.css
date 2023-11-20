@@ -1,0 +1,31 @@
+.container {
+    text-align: center;
+  }
+  
+  .titulo {
+    font-weight: bold;
+  }
+  
+  .columna {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+  }
+  
+  .campo {
+    margin-bottom: 15px;
+  }
+  
+  .boton-actualizar {
+    margin-top: 20px;
+    background-color: #008080;
+    color: white;
+    align-items: center;
+  }
+
+  .label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  

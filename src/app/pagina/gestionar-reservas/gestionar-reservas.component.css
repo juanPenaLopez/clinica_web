@@ -4,7 +4,7 @@
   }
   
   .titulo {
-    color: #333; /* Puedes ajustar el color según tus preferencias */
+    color: #333;
   }
   
   .tabla {
@@ -20,7 +20,7 @@
   }
   
   .tabla th {
-    background-color: #0074cc; /* Azul oscuro para encabezado */
+    background-color: #0074cc;
     color: white;
   }
   
@@ -34,7 +34,7 @@
   }
   
   .boton {
-    background-color: #0074cc; /* Azul oscuro */
+    background-color: #0074cc;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -44,7 +44,7 @@
   }
   
   .boton:hover {
-    background-color: #00568e; /* Cambia el color al pasar el ratón sobre el botón */
+    background-color: #00568e;
   }
   
   .paginador {

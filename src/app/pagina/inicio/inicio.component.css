@@ -23,7 +23,7 @@ body {
   .slide {
     width: 25%;
     position: relative;
-    margin-right: 10px; /* Espacio entre cada imagen */
+    margin-right: 10px;
   }
   
   .image-container {

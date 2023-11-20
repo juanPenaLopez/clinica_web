@@ -8,12 +8,10 @@ import { Component } from '@angular/core';
 export class GestionarReservasComponent {
 
   verDetalles() {
-    // Lógica para mostrar detalles de la reserva
     console.log('Ver detalles');
   }
 
   eliminarReserva() {
-    // Lógica para eliminar la reserva
     console.log('Eliminar reserva');
   }
 

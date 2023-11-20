@@ -26,6 +26,9 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { GestionarCitasComponent } from './pagina/gestionar-citas/gestionar-citas.component';
 import { ConsultarDetalleCitaComponent } from './pagina/gestionar-citas/consultar-detalle-cita/consultar-detalle-cita.component';
 import { ModalEliminarCitaComponent } from './pagina/gestionar-citas/modal-eliminar-cita/modal-eliminar-cita.component';
+import { ActualizarDataPacienteComponent } from './pagina/actualizar-data-paciente/actualizar-data-paciente.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -46,7 +49,8 @@ import { ModalEliminarCitaComponent } from './pagina/gestionar-citas/modal-elimi
     GestionarReservasComponent,
     GestionarCitasComponent,
     ConsultarDetalleCitaComponent,
-    ModalEliminarCitaComponent
+    ModalEliminarCitaComponent,
+    ActualizarDataPacienteComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +60,10 @@ import { ModalEliminarCitaComponent } from './pagina/gestionar-citas/modal-elimi
     BrowserAnimationsModule,
     MatButtonModule,
     MatDialogModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatInputModule,
+    MatSelectModule,
+    MatButtonModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: UsuarioInterceptor, multi: true }
