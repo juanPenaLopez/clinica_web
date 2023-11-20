@@ -1,0 +1,36 @@
+<div class="container">
+    <h1 class="titulo">Gestionar citas</h1>
+    
+    <table class="tabla">
+      <thead>
+        <tr>
+          <th>N° de cita</th>
+          <th>Nombre del paciente</th>
+          <th>Fecha de la cita</th>
+          <th>Estado</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Puedes llenar esta parte con datos dinámicos desde tu componente -->
+        <tr>
+          <td>1</td>
+          <td>Juan Pérez</td>
+          <td>2023-11-18</td>
+          <td>Programada</td>
+          <td>
+            <div class="acciones">
+              <span class="icono" (click)="verDetalles()">🔍</span>
+              <span class="icono" (click)="eliminarCita()">❌</span>
+            </div>
+          </td>
+        </tr>
+        <!-- ... más filas según necesites -->
+      </tbody>
+    </table>
+  
+    <div class="paginador">
+      <mat-paginator [length]="100" [pageSize]="10"></mat-paginator>
+    </div>
+  </div>
+  

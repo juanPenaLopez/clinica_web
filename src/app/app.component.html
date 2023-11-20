@@ -14,19 +14,20 @@ text-decoration-none">
         <li><a routerLink="" class="nav-link px-2 text-white">Gestión PQRS</a></li>
         <li><a routerLink="" class="nav-link px-2 text-white">Gestión Citas</a></li>
         <li><a routerLink="/gestion-pqrs" class="nav-link px-2 text-white">Gestión PQRS</a></li>
+        <li><a routerLink="/gestionar-reservas" class="nav-link px-2 text-white">Gestión Reservas</a></li>
       </ul>
       <div *ngIf="!isLogged; then nologged else logged"></div>
       <ng-template #nologged>
         <div class="text-end">
           <button type="button" routerLink="/login" class="btn btn-outline-light
-me-2">Login</button>
-          <button type="button" routerLink="/registro" class="btn btn-warning">Sign-up</button>
+me-2">Iniciar Sesion</button>
+          <button type="button" routerLink="/registro" class="btn btn-warning">Registrarse</button>
         </div>
       </ng-template>
       <ng-template #logged>
         <div class="text-end">
           <label class="me-3" >Hola {{email}}</label>
-          <button type="button" (click)="logout()" class="btn btn-warning">Logout</button>
+          <button type="button" (click)="logout()" class="btn btn-warning">Cerrar Sesión</button>
         </div>
       </ng-template>
     </div>

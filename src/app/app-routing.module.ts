@@ -13,6 +13,8 @@ import {RolesGuard} from "./guards/roles.service";
 import { RestaurarContrasenaComponent } from './pagina/restaurar-contrasena/restaurar-contrasena.component';
 import {RecuperacionCuentaComponent} from "./pagina/recuperacion-cuenta/recuperacion-cuenta.component";
 import {SolicitarDiaLibreComponent} from "./pagina/solicitar-dia-libre/solicitar-dia-libre.component";
+import { GestionarReservasComponent } from './pagina/gestionar-reservas/gestionar-reservas.component';
+import { GestionarCitasComponent } from './pagina/gestionar-citas/gestionar-citas.component';
 const routes: Routes = [
 { path: "home", component: InicioComponent },
 { path: "login", component: LoginComponent },
@@ -32,6 +34,8 @@ const routes: Routes = [
 { path: "restaurar-contrasena", component: RestaurarContrasenaComponent },
   { path: "recuperar-cuenta", component: RecuperacionCuentaComponent },
   { path: "solicitar-dia-libre", component: SolicitarDiaLibreComponent },
+  { path: "gestionar-reservas", component: GestionarReservasComponent },
+  { path: "gestionar-citas", component: GestionarCitasComponent },
 { path: "**", pathMatch: "full", redirectTo: "home" }
 ];
 @NgModule({

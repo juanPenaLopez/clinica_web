@@ -1,0 +1,39 @@
+<div class="container">
+    <h1 class="titulo">Gestionar reservas</h1>
+
+    <table class="tabla">
+        <thead>
+            <tr>
+                <th>N° solicitud</th>
+                <th>Cédula Médico</th>
+                <th>Quirófano</th>
+                <th>Fecha reserva</th>
+                <th>Cédula paciente</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Puedes llenar esta parte con datos dinámicos desde tu componente -->
+            <tr>
+                <td>1</td>
+                <td>123456789</td>
+                <td>Quirófano 1</td>
+                <td>2023-11-18</td>
+                <td>987654321</td>
+                <td>
+                    <div class="acciones">
+                        <span class="icono" (click)="verDetalles()">🔍</span>
+                        <span class="icono" (click)="eliminarReserva()">❌</span>
+                    </div>
+                </td>
+            </tr>
+            <!-- ... más filas según necesites -->
+        </tbody>
+    </table>
+
+    <div class="paginador">
+        <mat-paginator [length]="100" [pageSize]="10"></mat-paginator>
+    </div>
+    <br>
+    <button class="boton">Solicitar</button>
+</div>

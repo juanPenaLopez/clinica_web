@@ -21,6 +21,9 @@ import { ModalContentComponent } from './pagina/modal-content/modal-content.comp
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { SolicitarDiaLibreComponent } from './pagina/solicitar-dia-libre/solicitar-dia-libre.component';
+import { GestionarReservasComponent } from './pagina/gestionar-reservas/gestionar-reservas.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { GestionarCitasComponent } from './pagina/gestionar-citas/gestionar-citas.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +40,9 @@ import { SolicitarDiaLibreComponent } from './pagina/solicitar-dia-libre/solicit
     RestaurarContrasenaComponent,
     RecuperacionCuentaComponent,
     ModalContentComponent,
-    SolicitarDiaLibreComponent
+    SolicitarDiaLibreComponent,
+    GestionarReservasComponent,
+    GestionarCitasComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +51,8 @@ import { SolicitarDiaLibreComponent } from './pagina/solicitar-dia-libre/solicit
     HttpClientModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatDialogModule
+    MatDialogModule,
+    MatPaginatorModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: UsuarioInterceptor, multi: true }

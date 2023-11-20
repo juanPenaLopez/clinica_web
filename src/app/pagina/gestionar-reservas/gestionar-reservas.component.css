@@ -1,0 +1,58 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .titulo {
+    color: #333; /* Puedes ajustar el color según tus preferencias */
+  }
+  
+  .tabla {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  
+  .tabla th, .tabla td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .tabla th {
+    background-color: #0074cc; /* Azul oscuro para encabezado */
+    color: white;
+  }
+  
+  .acciones {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .icono {
+    cursor: pointer;
+  }
+  
+  .boton {
+    background-color: #0074cc; /* Azul oscuro */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .boton:hover {
+    background-color: #00568e; /* Cambia el color al pasar el ratón sobre el botón */
+  }
+  
+  .paginador {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .mat-paginator {
+    justify-content: center;
+  }
