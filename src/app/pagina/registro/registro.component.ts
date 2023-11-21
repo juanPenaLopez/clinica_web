@@ -4,6 +4,7 @@ import {ClinicaService} from "../../servicios/clinica.service";
 import {AuthService} from "../../servicios/auth.service";
 import {Alerta} from "../../modelo/alerta";
 import {ImagenService} from "../../servicios/imagen.service";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-registro',
@@ -19,13 +20,17 @@ export class RegistroComponent {
   private usuario: RegistroPacienteDTO;
 
   constructor(private authService: AuthService, private clinicaService: ClinicaService,
-              private imagenService: ImagenService) {
+              private imagenService: ImagenService,
+              private router: Router) {
     this.registroPacienteDTO = new RegistroPacienteDTO();
     this.ciudades = new Array<any>();
     this.usuario = new RegistroPacienteDTO();
   }
 
   public registrar() {
+
+    this.router.navigate(['/completar-registro']);
+
     if (this.registroPacienteDTO.urlFoto.length != 0){
       this.authService.registrarPaciente(this.usuario).subscribe({
         next: (data: { respuesta: any; }) => {
@@ -78,4 +83,5 @@ export class RegistroComponent {
       this.alerta = { mensaje: 'Debe seleccionar una imagen y subirla', tipo: "danger" };
     }
   }
+  
 }

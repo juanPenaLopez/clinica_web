@@ -29,6 +29,8 @@ import { ModalEliminarCitaComponent } from './pagina/gestionar-citas/modal-elimi
 import { ActualizarDataPacienteComponent } from './pagina/actualizar-data-paciente/actualizar-data-paciente.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
+import { CompletarRegistroComponent } from './pagina/completar-registro/completar-registro.component';
+import { SolicitarCitaComponent } from './pagina/solicitar-cita/solicitar-cita.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +52,9 @@ import { MatSelectModule } from '@angular/material/select';
     GestionarCitasComponent,
     ConsultarDetalleCitaComponent,
     ModalEliminarCitaComponent,
-    ActualizarDataPacienteComponent
+    ActualizarDataPacienteComponent,
+    CompletarRegistroComponent,
+    SolicitarCitaComponent
   ],
   imports: [
     BrowserModule,

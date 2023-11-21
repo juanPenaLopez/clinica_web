@@ -1,0 +1,29 @@
+/* Estilos para centrar el formulario */
+.card-body {
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilos para las dos columnas */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Estilos para la primera columna */
+.col-1 {
+  flex: 0 0 48%; /* Ancho de la primera columna */
+}
+
+/* Estilos para la segunda columna */
+.col-2 {
+  flex: 0 0 48%; /* Ancho de la segunda columna */
+}
+
+/* Estilos para los botones */
+button {
+  margin-top: 15px; /* Espaciado superior para los botones */
+}
+
+/* Estilos adicionales según sea necesario */

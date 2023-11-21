@@ -1,82 +1,32 @@
-<div class="card">
-  <div class="card-header ps-5 pt-4 pb-4">
-    <h5 class="mb-0" ><i class="fa-solid fa-user-plus me-3"></i>Registro de un nuevo
-      paciente</h5>
+<div class="mb-3 row">
+  <div class="col-1">
+    <label class="col-form-label">Tipo de identificación:</label>
+    <input type="text" name="tipoIdentificacion" class="form-control" required />
+
+    <label class="col-form-label">Nombre completo:</label>
+    <input type="text" name="nombreCompleto" class="form-control" required />
+
+    <label class="col-form-label">Contraseña:</label>
+    <input type="password" name="contrasena" class="form-control" required />
+
+    <label class="col-form-label">Teléfono celular:</label>
+    <input type="text" name="telefonoCelular" class="form-control" required />
   </div>
-  <div class="card-body p-5">
-    <form #f="ngForm">
-      <div class="mb-3 row">
-        <label class="col-sm-2 col-form-label">Cédula: </label>
-        <div class="col-sm-10">
-          <input #cedula="ngModel"
-                 [ngClass]="cedula.invalid && (cedula.dirty || cedula.touched) ? 'is-invalid' : ''" type="text"
-                 name="cedula" class="form-control" required [(ngModel)]="registroPacienteDTO.cedula" />
-        </div>
-      </div>
-      <div class="mb-3 row">
-        <label class="col-sm-2 col-form-label">Nombre: </label>
-        <div class="col-sm-10">
-          <input #nombre="ngModel"
-                 [ngClass]="nombre.invalid && (nombre.dirty || nombre.touched) ? 'is-invalid' : ''" type="text"
-                 name="nombre" class="form-control" required [(ngModel)]="registroPacienteDTO.nombre" />
-        </div>
-      </div>
-      <div>
-        <label>Teléfono: </label>
-        <input type="text" name="telefono" [(ngModel)]="registroPacienteDTO.telefono" />
-      </div>
-      <div class="mb-3 row">
-        <label class="col-sm-2 col-form-label">Foto: </label>
-        <div class="col-sm-8">
-          <input type="file" class="form-control" name="foto" (change)="onFileChange($event)" />
-        </div>
-        <div class="col-sm-2" >
-          <button type="submit" [disabled]="archivos == null" class="btn btn-primary"
-                  (click)="subirImagen()" >
-            <i class="fa-solid fa-cloud-arrow-up me-2"></i>Subir Foto
-          </button>
-        </div>
-      </div>
-      <div>
-        <label>Ciudad: </label>
-        <input type="text" name="ciudad" [(ngModel)]="registroPacienteDTO.ciudad" />
-      </div>
-      <div>
-        <label>Fecha de nacimiento: </label>
-        <input type="date" name="fechaNacimiento"
-               [(ngModel)]="registroPacienteDTO.fechaNacimiento" />
-      </div>
-      <div>
-        <label>Alergias: </label>
-        <input type="text" name="alergias" [(ngModel)]="registroPacienteDTO.alergias" />
-      </div>
-      <div>
-        <label>EPS: </label>
-        <input type="text" name="eps" [(ngModel)]="registroPacienteDTO.eps" />
-      </div>
-      <div>
-        <label>Tipo de sangre: </label>
-        <input type="text" name="tipoSangre" [(ngModel)]="registroPacienteDTO.tipoSangre" />
-      </div>
-      <div>
-        <label>Correo electrónico: </label>
-        <input type="email" name="correo" [(ngModel)]="registroPacienteDTO.correo" />
-      </div>
-      <div>
-        <label>Contraseña: </label>
-        <input type="password" name="password" [(ngModel)]="registroPacienteDTO.password" />
-      </div>
-      <div>
-        <label >Repetir contraseña: </label>
-        <input type="password" name="confirmaPassword"
-               [(ngModel)]="registroPacienteDTO.confirmaPassword" required />
-      </div>
-      <div class="alert alert-danger" role="alert" *ngIf="!sonIguales()">Las contraseñas no
-        coinciden</div>
-      <button (click)="registrar()" class="btn btn-primary" type="submit" [disabled]="f.invalid || !sonIguales()">
-        <i class="fa-solid fa-circle-plus me-1"></i>Registrarse
-      </button>
-      <app-alerta [alerta]="alerta"></app-alerta>
-    </form>
+
+  <div class="col-2">
+    <label class="col-form-label">Numero identificación:</label>
+    <input type="text" name="numeroIdentificacion" class="form-control" required />
+
+    <label class="col-form-label">Correo:</label>
+    <input type="text" name="correo" class="form-control" required />
+
+    <label class="col-form-label">Confirmar correo:</label>
+    <input type="text" name="confirmarCorreo" class="form-control" required />
+  </div>
+
+  <div class="text-center">
+    <button (click)="registrar()" class="btn btn-primary" type="submit">
+      <i class="fa-solid fa-circle-plus me-1"></i>Registrarse
+    </button>
   </div>
 </div>

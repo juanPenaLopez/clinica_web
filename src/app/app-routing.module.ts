@@ -17,6 +17,8 @@ import { GestionarReservasComponent } from './pagina/gestionar-reservas/gestiona
 import { GestionarCitasComponent } from './pagina/gestionar-citas/gestionar-citas.component';
 import { ConsultarDetalleCitaComponent } from './pagina/gestionar-citas/consultar-detalle-cita/consultar-detalle-cita.component';
 import { ActualizarDataPacienteComponent } from './pagina/actualizar-data-paciente/actualizar-data-paciente.component';
+import { CompletarRegistroComponent } from './pagina/completar-registro/completar-registro.component';
+import { SolicitarCitaComponent } from './pagina/solicitar-cita/solicitar-cita.component';
 const routes: Routes = [
 { path: "home", component: InicioComponent },
 { path: "login", component: LoginComponent },
@@ -40,6 +42,8 @@ const routes: Routes = [
   { path: "gestionar-citas", component: GestionarCitasComponent },
   { path: "gestionar-citas/consultar-detalle-cita", component: ConsultarDetalleCitaComponent },
   { path: "actualizar", component: ActualizarDataPacienteComponent },
+  { path: "completar-registro", component: CompletarRegistroComponent },
+  { path: "solicitar-cita", component: SolicitarCitaComponent },
 { path: "**", pathMatch: "full", redirectTo: "home" }
 ];
 @NgModule({
