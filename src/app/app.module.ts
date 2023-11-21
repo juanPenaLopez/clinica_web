@@ -33,6 +33,7 @@ import { CompletarRegistroComponent } from './pagina/completar-registro/completa
 import { SolicitarCitaComponent } from './pagina/solicitar-cita/solicitar-cita.component';
 import { ModalExitosoComponent } from './pagina/actualizar-data-paciente/modal-exitoso/modal-exitoso.component';
 import { HistoriaClinicaPacienteComponent } from './pagina/historia-clinica-paciente/historia-clinica-paciente.component';
+import { FacturaClienteComponent } from './pagina/factura-cliente/factura-cliente.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { HistoriaClinicaPacienteComponent } from './pagina/historia-clinica-paci
     CompletarRegistroComponent,
     SolicitarCitaComponent,
     ModalExitosoComponent,
-    HistoriaClinicaPacienteComponent
+    HistoriaClinicaPacienteComponent,
+    FacturaClienteComponent
   ],
   imports: [
     BrowserModule,
