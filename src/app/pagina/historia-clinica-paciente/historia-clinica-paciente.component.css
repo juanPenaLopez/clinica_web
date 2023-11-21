@@ -1,0 +1,61 @@
+.container {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.titulo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.separador {
+    height: 2px;
+    background-color: #008080;
+    margin: 20px 0;
+}
+
+.link-volver {
+    text-align: left;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.columnas-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.columna {
+    flex: 1;
+    margin: 0 10px;
+    text-align: left;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.label-informacion {
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+.input-autoexpandible-grande {
+    resize: both;
+    min-height: 100px;
+    min-width: 300px;
+}
+
+.campos-autoexpandibles-container {
+    display: flex;
+    justify-content: space-between;
+}

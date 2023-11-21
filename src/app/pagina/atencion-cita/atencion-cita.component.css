@@ -1,0 +1,97 @@
+/* detalle-cita.component.css */
+.container {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.titulo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.separador {
+    height: 2px;
+    background-color: #008080;
+    margin: 20px 0;
+}
+
+.link-volver {
+    text-align: left;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.columnas-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.columna {
+    flex: 1;
+    margin: 0 10px;
+    text-align: left;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-autoexpandible {
+    resize: vertical;
+}
+
+.boton-consultar {
+    background-color: #008080;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.separador-horizontal {
+    height: 2px;
+    background-color: #008080;
+    margin: 20px 0;
+}
+
+.avance-titulo {
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.avance-columnas-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.avance-columna {
+    flex: 1;
+    text-align: left;
+    margin: 0 10px;
+}
+
+.boton-guardar {
+    background-color: #008080;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+.input-autoexpandible {
+    resize: vertical;
+    min-height: 50px;
+  }
