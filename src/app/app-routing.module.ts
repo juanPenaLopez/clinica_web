@@ -19,6 +19,7 @@ import { ConsultarDetalleCitaComponent } from './pagina/gestionar-citas/consulta
 import { ActualizarDataPacienteComponent } from './pagina/actualizar-data-paciente/actualizar-data-paciente.component';
 import { CompletarRegistroComponent } from './pagina/completar-registro/completar-registro.component';
 import { SolicitarCitaComponent } from './pagina/solicitar-cita/solicitar-cita.component';
+import { HistoriaClinicaPacienteComponent } from './pagina/historia-clinica-paciente/historia-clinica-paciente.component';
 const routes: Routes = [
 { path: "home", component: InicioComponent },
 { path: "login", component: LoginComponent },
@@ -31,8 +32,7 @@ const routes: Routes = [
       expectedRole: ["paciente"] } },
   { path: "detalle-pqrs/:codigo", component: DetallePqrsComponent, canActivate: [RolesGuard],
     data: { expectedRole: ["paciente", "admin"] } },
-  { path: "atender-cita", component: AtencionCitaComponent, canActivate: [RolesGuard], data: {
-      expectedRole: ["medico"] } },
+  { path: "atender-cita", component: AtencionCitaComponent},
   { path: "crear-medico", component: CrearMedicoComponent, canActivate: [RolesGuard], data: {
       expectedRole: ["admin"] } },
 { path: "restaurar-contrasena", component: RestaurarContrasenaComponent },
@@ -44,6 +44,7 @@ const routes: Routes = [
   { path: "actualizar", component: ActualizarDataPacienteComponent },
   { path: "completar-registro", component: CompletarRegistroComponent },
   { path: "solicitar-cita", component: SolicitarCitaComponent },
+  { path: "historia-clinica-paciente", component: HistoriaClinicaPacienteComponent },
 { path: "**", pathMatch: "full", redirectTo: "home" }
 ];
 @NgModule({

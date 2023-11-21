@@ -1,1 +1,80 @@
-<p>atencion-cita works!</p>
+<!-- detalle-cita.component.html -->
+<div class="container">
+    <h2 class="titulo">Cita N° <span class="label-informacion">123456</span></h2>
+
+    <div class="separador"></div>
+
+    <a href="/gestionar-citas" class="link-volver">< Volver</a>
+
+    <div class="columnas-container">
+        <div class="columna">
+            <div class="campo">
+                <label class="label">Nombre completo:</label>
+                <input type="text" placeholder="" disabled>
+            </div>
+            <div class="campo">
+                <label class="label">Motivo:</label>
+                <textarea class="input-autoexpandible" disabled></textarea>
+            </div>
+            <div class="campo">
+                <label class="label">Revisar historia clínica:</label>
+                <button class="boton-consultar" (click)="consultarHistoriaClinica()">Consultar Historia Clínica</button>
+            </div>
+        </div>
+
+        <div class="columna">
+            <div class="campo">
+                <label class="label">Tipo identificación:</label>
+                <select placeholder="DNS" disabled>
+                    <!-- opciones de tipo de identificación -->
+                </select>
+            </div>
+            <div class="campo">
+                <label class="label">Edad:</label>
+                <input type="text" placeholder="" disabled>
+            </div>
+            <div class="campo">
+                <label class="label">EPS:</label>
+                <select placeholder="Tipo EPS" disabled>
+                    <!-- opciones de EPS -->
+                </select>
+            </div>
+        </div>
+
+        <div class="columna">
+            <div class="campo">
+                <label class="label">Número de identificación:</label>
+                <input type="text" placeholder="Número de identificación" disabled>
+            </div>
+            <div class="campo">
+                <label class="label">Tipo de sangre:</label>
+                <select placeholder="Tipo Sangre" disabled>
+                    <!-- opciones de Tipos de sangre -->
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="separador-horizontal"></div>
+
+    <h2 class="avance-titulo">Avance de la cita</h2>
+
+    <div class="avance-columnas-container">
+        <div class="campo">
+            <label class="label">Diagnóstico:</label>
+            <input type="text" placeholder="Diagnóstico">
+        </div>
+
+        <div class="campo">
+            <label class="label">Síntomas:</label>
+            <textarea class="input-autoexpandible" placeholder="Síntomas"></textarea>
+        </div>
+
+        <div class="campo">
+            <label class="label">Tratamiento:</label>
+            <textarea class="input-autoexpandible" placeholder="Tratamiento"></textarea>
+        </div>
+    </div>
+
+    <button class="boton-guardar" (click)="guardar()">Guardar</button>
+</div>

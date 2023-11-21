@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ModalExitosoComponent } from './modal-exitoso/modal-exitoso.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-actualizar-data-paciente',
@@ -7,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class ActualizarDataPacienteComponent {
 
+  constructor(public dialog: MatDialog) {}
+
+  actualizar(){
+    this.dialog.open(ModalExitosoComponent);
+  }
 }

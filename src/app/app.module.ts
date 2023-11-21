@@ -31,6 +31,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { CompletarRegistroComponent } from './pagina/completar-registro/completar-registro.component';
 import { SolicitarCitaComponent } from './pagina/solicitar-cita/solicitar-cita.component';
+import { ModalExitosoComponent } from './pagina/actualizar-data-paciente/modal-exitoso/modal-exitoso.component';
+import { HistoriaClinicaPacienteComponent } from './pagina/historia-clinica-paciente/historia-clinica-paciente.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,9 @@ import { SolicitarCitaComponent } from './pagina/solicitar-cita/solicitar-cita.c
     ModalEliminarCitaComponent,
     ActualizarDataPacienteComponent,
     CompletarRegistroComponent,
-    SolicitarCitaComponent
+    SolicitarCitaComponent,
+    ModalExitosoComponent,
+    HistoriaClinicaPacienteComponent
   ],
   imports: [
     BrowserModule,

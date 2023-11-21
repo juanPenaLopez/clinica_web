@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-atencion-cita',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AtencionCitaComponent {
 
+  constructor(private router: Router) {}
+
+  guardar(){
+    this.router.navigate(['/gestionar-citas']);
+  }
+
+  consultarHistoriaClinica(){
+    this.router.navigate(['/historia-clinica-paciente']);
+  }
 }
