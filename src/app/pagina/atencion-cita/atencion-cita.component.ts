@@ -13,4 +13,8 @@ export class AtencionCitaComponent {
   guardar(){
     this.router.navigate(['/gestionar-citas']);
   }
+
+  consultarHistoriaClinica(){
+    this.router.navigate(['/historia-clinica-paciente']);
+  }
 }
